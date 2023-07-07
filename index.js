@@ -16,10 +16,6 @@ let svgString;
 
 // SVG Class
 class SVG{
-  constructor(){
-    this.textElement = ""
-    this.shapeElement = ""
-  }
   render(){
     return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shapeElement}${this.textElement}</svg>`
   }
@@ -63,6 +59,7 @@ function createFile(fileName, data){
       if (err) {
         return console.log(err)
       }
+      console.log("File logo.svg created")
     })
 }
 
@@ -92,20 +89,14 @@ function init() {
         case "square":
           Shape = new Square();
             break;
-        default:
-          console.log("You have to choose circle, triangle or square")
-          return;
       }
-      console.log(Shape);
       Shape.setColor(answers.inputShapeColor);
-      console.log(Shape);
 
       // Ceate new SVG
       Svg = new SVG();
       Svg.setTextElement(userText,answers.inputTextColor);
       Svg.setShapeElement(Shape);
       svgString = Svg.render();
-      console.log(svgString);
       
       // Writing to file
       createFile(svg_file, svgString);
