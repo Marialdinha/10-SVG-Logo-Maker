@@ -17,7 +17,7 @@ let svgString;
 // SVG Class
 class SVG{
   render(){
-    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shapeElement}${this.textElement}</svg>`
+    return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300px" height="200px">${this.shapeElement}${this.textElement}</svg>`
   }
   setTextElement(text,color){
     this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
@@ -59,7 +59,7 @@ function createFile(fileName, data){
       if (err) {
         return console.log(err)
       }
-      console.log("File logo.svg created")
+      console.log("Generated logo.svg")
     })
 }
 
