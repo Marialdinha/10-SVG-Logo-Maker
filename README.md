@@ -6,6 +6,7 @@
   - [Installation](#installation)
   - [Test](#test)
   - [Screenshots](#screenshots)
+  - [Demonstration](#demonstration)
   - [Contact](#contact)
  
 ## Description
@@ -37,5 +38,10 @@ Generated file (logo.svg)
    
 ![generated_file](./images/image-generated.png)
 
+## Demonstration
+Video demonstrating how the app works
+
+https://www.loom.com/share/90f00d99a9354b34a96550f679160561?sid=fd85d88b-5252-4988-a08a-793ce72989fa
+<br/> 
 ## Contact
 You can contact me via email: marialda@bellsouth.net
